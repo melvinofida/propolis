@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'TheForegenRegular';
+  src: url('fonts/TheForegenRegular.otf') format('opentype');
+  /*font-family: 'georgia';
+  src: url('fonts/georgia.ttf') format('true');*/
+}
+@font-face {
+  font-family: 'georgia';
+  src: url('fonts/georgia.ttf') format('true');
+}
+html{
+  font-size: 16px;
+
+
+}
+@media (max-width: 800px) {
+  html{font-size: 12px;}
+}
+@media (max-width: 468px) {
+  header ul{
+    display: none;
+  }
+
+  footer ul{
+    display: none;
+  }
+  .social{
+    font-size: 2em;
+  }
+  #cover{
+    display: none;
+  }
+  .textblock{
+      width: 70%;
+  }
+}
+@media (min-width: 468px) {
+    #bars{
+      display: none;
+    }
+    .sidebar{
+      display: none;
+    }
+    #covermoble{
+      display: none;
+    }
+    .textblock{
+        width: 30%;
+    }
+  }
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+#bars{
+  font-size: 2em;
+  margin-right: 2em;
+}
+
+.sidebar{
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  background-color: #fff;
+  height: 100%;
+  transition: 1s;
+  width: 0;
+  overflow-x: hidden;
+}
+.sidebar .cls{
+  font-size: 7em;
+}
+.sidebar ul{
+  padding: 5% 40% 5% 5%;
+}
+.sidebar li{
+  padding: 5px;
+  list-style: none;
+  font-size: 2em;
+}
+.sidebar a{
+  text-decoration: none;
+  color: #8C1C03;
+
+  font-family: TheForegenRegular;
+}
+.sidebar a:hover{
+  color: #F7BB2A;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  background-color: #fff;
+}
+header h1{
+  font-family: 'TheForegenRegular';
+  font-size: 2em;
+  margin-left: 3em;
+}
+header ul{
+  margin-right: 3em;
+}
+header a{
+  color: #8C1C03;
+  padding: 5px;
+  font-family: 'TheForegenRegular';
+  font-size: 1.5em;
+  list-style: none;
+}
+header a:hover{
+  color: #F7BB2A;
+}
+header li{
+  display: inline;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#cover{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#covermoble{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.homecontent{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 0;
+}
+.biocontent{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3%;
+  padding-bottom: 10%;
+  animation: fadeIn 2s;
+}
+.textblock{
+  padding: 0;
+
+  display:inline-block;
+}
+.textblock p {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+
+}
+.textblock .biopic{
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+}
+.contactcontent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  animation: fadeIn 2s;
+  height: 80vh;
+}
+.contactcontent p{
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  padding-top: 20vh;
+}
+.contactcontent a{
+  font-family: 'TheForegenRegular', sans-serif;
+  font-size: 3em;
+  color: #8C1C03;
+  margin: 0;
+  text-decoration: none;
+}
+.shopcontent{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'TheForegenRegular', sans-serif;
+  font-size: 3em;
+  color: #8C1C03;
+  margin: 0;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  text-decoration: none;
+  animation: fadeIn 2s;
+}
+
+.listencontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 80vh;
+  animation: fadeIn 2s;
+
+}
+#spotplayer{
+  display: block;
+  animation: fadeIn 2s;
+
+}
+#bandplayer{
+  display: none;
+  animation: fadeIn 2s;
+}
+.btnwrap{
+  padding: 3em;
+
+}
+.btnwrap a{
+  margin: 3em;
+  font-family: TheForegenRegular;
+  text-decoration: none;
+  font-size: 2em;
+  color: #F7BB2A
+}
+.btnwrap a:hover{
+  color: #8C1C03;
+}
+
+.videocontent{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  animation: fadeIn 2s;
+}
+
+.videocontent iframe{
+  padding: 3em;
+  animation: fadeIn 2s;
+}
+.videocontent h1{
+  font-family: TheForegenRegular, sans-serif;
+  font-size: 3em;
+  margin-top: 1em;
+  color: #8C1C03;
+}
+
+.Showscontent{
+  padding: 7em;
+  padding-left: 15em;
+  padding-right: 15em;
+  margin-bottom: 10em;
+  animation: fadeIn 2s;
+
+}
+
+
+footer{
+  position: relative;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7BB2A;
+  margin: 0;
+  height: 60vh;
+
+}
+.social{
+  padding-top: 25vh;
+}
+footer ul{
+  list-style: none;
+  padding-bottom: 7%;
+}
+footer li{
+  display: inline;
+  text-align: center;
+
+}
+footer a{
+  color: #8C1C03;
+  padding: 5px;font-size: 1.3em;
+  font-family: 'TheForegenRegular';
+  font-size: 1.5em;
+
+}
+footer a:hover{
+  color: #F9F9F9;
+}
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+/* Color Theme Swatches in Hex */
+.web-design1-1-hex { color: #024959; }
+.web-design1-2-hex { color: #F7BB2A; }
+.web-design1-3-hex { color: #FFFFFF; }
+.web-design1-4-hex { color: #8C1C03; }
+.web-design1-5-hex { color: #F2F2F2; }
